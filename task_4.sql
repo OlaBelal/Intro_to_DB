@@ -1,7 +1,7 @@
 -- Use the specified database
 USE alx_book_store;
 
--- Querying the information_schema to get full description of the books table
+-- Querying the information_schema to get the full description of the books table
 SELECT 
     COLUMN_NAME,
     COLUMN_TYPE,
@@ -12,5 +12,5 @@ SELECT
 FROM 
     information_schema.columns 
 WHERE 
-    table_name = 'Books' AND 
-    table_schema = DATABASE();
+    table_schema = 'alx_book_store' AND 
+    table_name = 'Books';
