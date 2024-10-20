@@ -1,7 +1,5 @@
--- Use the specified database
+-- Use the alx_book_store database
 USE alx_book_store;
 
--- Querying the information_schema to list all tables in the current database
-SELECT table_name 
-FROM information_schema.tables 
-WHERE table_schema = DATABASE();
+-- List all tables in the alx_book_store database
+SHOW TABLES;
